@@ -1,1 +1,11 @@
-
+@echo off
+chcp 936 >nul
+title Echo VAD 启动器
+echo [Echo] 正在唤醒顺风耳...
+python "G:\SteamLibrary\steamapps\common\你的ai桌宠\resources\backend\workspace\skills\vad_f2.py"
+if 0 neq 0 (
+    echo.
+    echo [错误] 脚本启动失败！请确保 Python 3.12 安装正确。
+    pause
+)
+pause
